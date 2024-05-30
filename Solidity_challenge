@@ -1,0 +1,45 @@
+// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.7;
+
+contract Storage {
+    uint uintNumber ;
+    string stringAlpha ;
+    bool boolBeta ;
+    address addressGama ;
+    // declared four different variables
+
+    // set and get function for uint
+    function setUintVariable( uint _value) public returns (uint){
+        uintNumber = _value;
+        return uintNumber;
+    }
+    function getUintVariable() public view returns (uint){
+        return uintNumber;
+    }
+
+    // set and get function for string
+    function setStringVariable( string memory _value) public returns (string memory){
+        stringAlpha = _value;
+        return stringAlpha;
+    }
+    function getStringVariable() public view returns (string memory){
+        return stringAlpha;
+    }
+    // set and get function for bool
+    function setBoolVariable(bool _value) public returns (bool){
+        boolBeta = _value;
+        return boolBeta;
+    }
+    function getBoolVariable() public view returns (bool){
+        return boolBeta;
+    }
+    // set and get functions for address
+    function setAddressVariable(address _value) public returns(address){
+        addressGama = _value;
+        return addressGama;
+    }
+    function getAddressVariable() public view returns(address){
+        return addressGama;
+    }
+}
